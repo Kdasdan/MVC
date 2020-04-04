@@ -1,0 +1,124 @@
+// COLORS
+@import 'colors';
+// END
+
+// VARIABLES
+$borderRadius: 5px;
+// END
+
+// GENERAL
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  transition: 0.5s;
+}
+
+body {
+  background-color: $bgColor;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: $fontColor;
+}
+
+h5 {
+  font-size: 20px;
+  color: $secondColor;
+  text-align: center;
+}
+
+p {
+  font-size: 15px;
+  color: white;
+  text-align: center;
+}
+// END
+
+// MAIN
+.container {
+  width: 500px;
+  height: 600px;
+  border: solid 1px $borderColor;
+  border-radius: $borderRadius;
+  margin: 50px auto;
+
+  form {
+    width: 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+
+    #btn {
+      background-color: $btnColor;
+      color: $fontColor;
+      border-color: $borderColor;
+      border-radius: $borderRadius;
+      font-size: 20px;
+    }
+
+    select {
+      color: $fontColor;
+      background-color: $bgColor;
+      border-color: $borderColor;
+      border-radius: $borderRadius;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .box {
+      width: 400px;
+      height: 400px;
+      border: solid 1px $borderColor;
+      border-radius: $borderRadius;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    table,
+    th,
+    td {
+      width: 350px;
+      border: solid 1px $borderColor;
+      text-align: center;
+      margin: 10px auto;
+      padding: 3px;
+    }
+
+    th {
+      color: #4191e4;
+      font-size: 17px;
+    }
+
+    td {
+      color: white;
+    }
+
+    #btn:hover {
+      transition: 0.5;
+      border-color: $secondColor;
+    }
+
+    *:hover {
+      transition: 0.5s;
+      border-color: $secondColor;
+    }
+  }
+
+  *:hover {
+    transition: 0.5s;
+    border-color: $secondColor;
+  }
+}
+
+*:hover {
+  transition: 0.5s;
+  border-color: $secondColor;
+}
